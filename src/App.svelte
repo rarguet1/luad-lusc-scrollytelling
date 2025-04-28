@@ -4,15 +4,14 @@
 	import { getMotion } from "./utils.js";
 	import { themes } from "./config.js";
 	import ONSHeader from "./layout/ONSHeader.svelte";
-	import ONSFooter from "./layout/ONSFooter.svelte";
+	import Footer from "./layout/Footer.svelte";
 	import Header from "./layout/Header.svelte";
 	import Section from "./layout/Section.svelte";
 	import Media from "./layout/Media.svelte";
 	import Scroller from "./layout/Scroller.svelte";
 	import Filler from "./layout/Filler.svelte";
 	import Divider from "./layout/Divider.svelte";
-	import Toggle from "./ui/Toggle.svelte";
-	import Arrow from "./ui/Arrow.svelte";
+
 	
 	// IMPORTS
 	import bbox from "@turf/bbox";
@@ -310,12 +309,6 @@
 	<p style="margin-top: 20px">
 		Josh, Rodolfo, Sasha, Tirth
 	</p>
-	<!-- <p>
-		<Toggle label="Animation {animation ? 'on' : 'off'}" mono={true} bind:checked={animation}/>
-	</p> -->
-	<!-- <div style="margin-top: 90px;">
-		<Arrow color="white" {animation}>Scroll to begin</Arrow>
-	</div> -->
 </Header>
 
 <!-- GOAL STATEMENT -->
@@ -602,7 +595,16 @@
  </Section>
  <Divider />
 
-<ONSFooter />
+ <Section>
+	<h2>Limitations and Future Improvements</h2>
+	<p>
+		One limitation was the use of only mRNA data, using multi-omics data could improve performance. 
+		TabNet's lower accuracy suggests that hyperparameter optimization or model architecture changes might be necessary. 
+		In the future, we aim to explore Graph Neural Networks to better capture relationships between genes and improve interpretability.
+	</p>
+</Section>
+
+<Footer />
 
 <style>
 	/* Styles specific to elements within the demo */
@@ -611,34 +613,5 @@
 	}
 	:global(svelte-scroller-foreground section div) {
 		pointer-events: all !important;
-	}
-	select {
-		max-width: 350px;
-	}
-	.chart {
-		margin-top: 45px;
-		width: calc(100% - 5px);
-	}
-	.chart-full {
-		margin: 0 20px;
-	}
-	.chart-sml {
-		font-size: 0.85em;
-	}
-	/* The properties below make the media DIVs grey, for visual purposes in demo */
-	.media {
-		background-color: #f0f0f0;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-flow: column;
-		flex-flow: column;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		text-align: center;
-		color: #aaa;
 	}
 </style>
