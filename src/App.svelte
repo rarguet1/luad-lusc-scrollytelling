@@ -310,22 +310,27 @@
 	<p style="margin-top: 20px">
 		Josh, Rodolfo, Sasha, Tirth
 	</p>
-	<p>
+	<!-- <p>
 		<Toggle label="Animation {animation ? 'on' : 'off'}" mono={true} bind:checked={animation}/>
-	</p>
-	<div style="margin-top: 90px;">
+	</p> -->
+	<!-- <div style="margin-top: 90px;">
 		<Arrow color="white" {animation}>Scroll to begin</Arrow>
-	</div>
+	</div> -->
 </Header>
 
-<!-- OPENING STATEMENT -->
+<!-- GOAL STATEMENT -->
 <Filler theme="lightblue" short={true} wide={true} center={false}>
 	<p class="text-big">
-		Lung cancer remains the deadliest cancer in the U.S. Deep learning can help identify critical biomarkers and classify subtypes like LUAD and LUSC more effectively.
+		<strong>Goal: Use mRNA sequencing data to classify patients into LUAD or LUSC subtypes.</strong>
+	</p>
+	<p class="text-big">
+		<strong>What is MRNA sequencing data?</strong><br>
+		<br>mRNA-seq = value that quantifies gene activity<br>
+		"Think of it as pixel intensities for genes"
 	</p>
 </Filler>
 
-<!-- First story section, Why Lung Cancer -->
+<!-- First story section, Why Lung Cancer
 <Section>
 	<h2>Why Lung Cancer?</h2>
 	<p>
@@ -339,7 +344,7 @@
 	<blockquote class="text-indent">
 		"Lung cancer is the leading cause of cancer-related deaths worldwide, accounting for the highest mortality rates among both men and women."&mdash;World Health Organization
 	</blockquote>
-</Section>
+</Section> -->
 
 
 <!-- Second story section, Dataset used-->
@@ -481,37 +486,110 @@
 	  </div>
   </Media>
 
-<Section>
+<!-- <Section>
 	<h2>Goal:</h2>
 	<p>
-		Use MRNA sequencing data (quantifies the activity of a gene) to classify patients into LUAD or LUSC subtypes. Include screen of data for visualization.
+		Use MRNA sequencing data (values that quantify the activity of a gene) to classify patients into LUAD or LUSC subtypes.
 	</p>
-</Section>
+</Section> -->
 
+<Divider />
 <!-- Classic ML Models-->
 <Section>
 	<h2>Benchmarking: Classic ML Models</h2>
 	<p>
-		We are using XGBoost and Random Forest Trees with Accuracy, F1, Precision, and Recall as evaluation metrics. Attach screenshots here.
+		We are using XGBoost and Random Forest Trees as benchmarks for our Neural Networks. 
+		These models provide feature importances which are useful for interpretability.
 	</p>
+	
 </Section>
+
+<!-- Chart 1 -->
+<Media col='wide' caption="Random Forest Average Accuracy across 5 folds: 0.9519.">
+	<img src="/img/RFT_Feature_Importance.png" alt="TCGA Infographic" />
+</Media>
+<!-- Chart 2 -->
+<Media col='wide' caption="XGBoost Average Accuracy across 5 folds: 0.9646.">
+	<img src="/img/XGBoost_Feature_Importance.png" alt="TCGA Infographic" />
+</Media>
+
 <Divider />
 
 <!-- MLP -->
 <Section>
 	<h2>MLP Model</h2>
 	<p>
-		Architecture: 5-layer MLP, ReLU, Adam. Use SHAP + LIME for interpretability. Attach arch, training and results here.
+		A 4-layer MLP with batch normalization and dropout (0.53) after each hidden layer, trained using Adam optimizer to classify LUAD vs LUSC from 20,530 mRNA features.
 	</p>
 </Section>
+
+<Section>
+	<h3>MLP Training</h3>
+</Section>
+<!-- Chart 1 -->
+<Media col='medium' caption="MLP loss plot.">
+	<img src="/img/MLP_loss_plot.png" alt="TCGA Infographic" />
+</Media>
+
+<Section>
+	<h3>MLP Results</h3>
+</Section>``
+<!-- Chart 2 -->
+<Media col='medium' caption="MLP Test Accuracy: 0.9706.">
+	<img src="/img/MLP_acc_plot.png" alt="TCGA Infographic" />
+</Media>
+<!-- Chart 3 -->
+<Media col='wide' caption="Integrated Gradients for feature attribution.">
+	<img src="/img/MLP_Feature_Importance.png" alt="TCGA Infographic" />
+</Media>
+
+<Section>
+	<h3>MLP Discussion</h3>
+	<p>
+		MLP achieved the best test accuracy (0.97) surpassing both classic ML models (XGBoost, Random Forest) and TabNet.
+		The MLP required heavy regularization through dropout and batch norm to control overfitting. 
+		MLP doesn't provide interpretability without feature attribution methods. 
+		In biological settings, it's necessary to know exactly what features led to a classification.
+	</p>
+</Section>
+
 <Divider />
 
 <!-- TabNet -->
 <Section>
-	<h2>TabNet Model</h2>
+	<h2>TabNet</h2>
 	<p>
-		Google model designed for tabular data, uses built-in attention mechanism. Attach arch, training, and results here.
+		Google model designed for tabular data, uses built-in attention mechanism. Insert quick explanation of TabNet. 
 	</p>
+</Section>
+
+<Section>
+	<h3>TabNet Training</h3>
+</Section>
+<!-- Chart 1 -->
+<Media col='medium' caption="TabNet loss plot.">
+	<img src="/img/TabNet_loss_plot.png" alt="TCGA Infographic" />
+</Media>
+
+<Section>
+	<h3>TabNet Results</h3>
+</Section>``
+<!-- Chart 2 -->
+<Media col='medium' caption="TabNet Test Accuracy: 0.8824.">
+	<img src="/img/TabNet_acc_plot.png" alt="TCGA Infographic" />
+</Media>
+<!-- Chart 3 -->
+<Media col='wide' caption="">
+	<img src="/img/TabNet_Feature_Importance.png" alt="TCGA Infographic" />
+</Media>
+
+<Section>
+	<h3>TabNet Discussion</h3>
+	<p>
+		It was surprising that TabNet, despite its built-in attention mechanism for tabular data, performed worse (0.8824 accuracy) than simpler models.
+		However, TabNet strength lies in providing interpretability out of the box through feature importances.
+	</p>
+
 </Section>
 <Divider />
 
@@ -519,11 +597,11 @@
  <Section>
 	<h2>Biomarker Discovery</h2>
 	<p>
-		SHAP/LIME feature from MLP. TabNet attention results. Compare with literature.
+		IG feature from MLP. TabNet attention results. Compare with literature.
 	</p>
  </Section>
  <Divider />
- 
+
 <ONSFooter />
 
 <style>
