@@ -598,11 +598,31 @@
  <Section>
 	<h2>Limitations and Future Improvements</h2>
 	<p>
-		One limitation was the use of only mRNA data, using multi-omics data could improve performance. 
-		TabNet's lower accuracy suggests that hyperparameter optimization or model architecture changes might be necessary. 
-		In the future, we aim to explore Graph Neural Networks to better capture relationships between genes and improve interpretability.
+		One major limitation of our study is the reliance solely on mRNA expression data. While informative, mRNA data represents only one layer of the complex biological processes involved in cancer. Incorporating multi-omics data — such as DNA methylation, copy number variation, or proteomics — could provide a more holistic view and enhance model performance.
+	</p>
+	<p>
+		Additionally, TabNet’s lower accuracy (0.8824) compared to MLP and classic ML models suggests that further tuning of its hyperparameters or architectural changes might be necessary. For example, adjusting the number of decision steps, attention sparsity, or implementing a more robust learning rate schedule may improve results.
+	</p>
+	<p>
+		Another limitation lies in dataset imbalance and potential batch effects within TCGA data, which could introduce biases. Future work should explore strategies like domain adaptation, data augmentation, or sample reweighting.
+	</p>
+	<p>
+		Moreover, while MLP achieved the highest accuracy (0.9706), its lack of built-in interpretability necessitated the use of post hoc methods like Integrated Gradients. In clinical applications, interpretability is essential for biomarker validation and trust in model decisions.
+	</p>
+	<p>
+		In future iterations, we aim to:
+	</p>
+	<ul>
+		<li>Integrate Graph Neural Networks (GNNs) to model gene-gene interactions more effectively.</li>
+		<li>Evaluate model robustness on external NSCLC cohorts.</li>
+		<li>Apply SHAP or attention-based visualization to unify interpretability across models.</li>
+		<li>Investigate time-series omics to capture disease progression signals.</li>
+	</ul>
+	<p>
+		Our long-term goal is to build explainable models that are not only accurate but also biologically meaningful and clinically actionable.
 	</p>
 </Section>
+
 
 <Footer />
 
