@@ -239,37 +239,37 @@
 
 	let cancerSampleCases = [
 		{ cancer: 'Acute Myeloid Leukemia', cases: 200, color: '#FFA500' },
-		{ cancer: 'Adrenocortical Carcinoma', cases: 92, color: '#FFD700' },
-		{ cancer: 'Bladder Urothelial Carcinoma', cases: 412, color: '#000080' },
-		{ cancer: 'Breast Ductal Carcinoma', cases: 778, color: '#FFC0CB' },
-		{ cancer: 'Breast Lobular Carcinoma', cases: 201, color: '#FFC0CB' },
-		{ cancer: 'Cervical Carcinoma', cases: 307, color: '#008080' },
-		{ cancer: 'Cholangiocarcinoma', cases: 51, color: '#4CBB17' },
-		{ cancer: 'Colorectal Adenocarcinoma', cases: 633, color: '#00008B' },
-		{ cancer: 'Esophageal Carcinoma', cases: 185, color: '#CCCCFF' },
-		{ cancer: 'Gastric Adenocarcinoma', cases: 443, color: '#CCCCFF' },
-		{ cancer: 'Glioblastoma Multiforme', cases: 617, color: '#808080' },
-		{ cancer: 'Head and Neck Squamous Cell Carcinoma', cases: 528, color: '#800020' },
-		{ cancer: 'Hepatocellular Carcinoma', cases: 377, color: '#50C878' },
+		{ cancer: 'Adrenocortical Carcinoma', cases: 92, color: '#FFA500' },
+		{ cancer: 'Bladder Urothelial Carcinoma', cases: 412, color: '#FFA500' },
+		{ cancer: 'Breast Ductal Carcinoma', cases: 778, color: '#FFA500' },
+		{ cancer: 'Breast Lobular Carcinoma', cases: 201, color: '#FFA500' },
+		{ cancer: 'Cervical Carcinoma', cases: 307, color: '#FFA500' },
+		{ cancer: 'Cholangiocarcinoma', cases: 51, color: '#FFA500' },
+		{ cancer: 'Colorectal Adenocarcinoma', cases: 633, color: '#FFA500' },
+		{ cancer: 'Esophageal Carcinoma', cases: 185, color: '#FFA500' },
+		{ cancer: 'Gastric Adenocarcinoma', cases: 443, color: '#FFA500' },
+		{ cancer: 'Glioblastoma Multiforme', cases: 617, color: '#FFA500' },
+		{ cancer: 'Head and Neck Squamous Cell Carcinoma', cases: 528, color: '#FFA500' },
+		{ cancer: 'Hepatocellular Carcinoma', cases: 377, color: '#FFA500' },
 		{ cancer: 'Chromophobe Renal Cell Carcinoma', cases: 113, color: '#FFA500' },
 		{ cancer: 'Clear Cell Renal Cell Carcinoma', cases: 537, color: '#FFA500' },
 		{ cancer: 'Papillary Renal Cell Carcinoma', cases: 291, color: '#FFA500' },
-		{ cancer: 'Lower Grade Glioma', cases: 516, color: '#808080' },
-		{ cancer: 'Lung Adenocarcinoma', cases: 585, color: '#EAE0C8' },
-		{ cancer: 'Lung Squamous Cell Carcinoma', cases: 504, color: '#EAE0C8' },
-		{ cancer: 'Mesothelioma', cases: 74, color: '#0000FF' },
-		{ cancer: 'Ovarian Serous Adenocarcinoma', cases: 608, color: '#008080' },
-		{ cancer: 'Pancreatic Ductal Adenocarcinoma', cases: 185, color: '#800080' },
-		{ cancer: 'Paraganglioma & Pheochromocytoma', cases: 179, color: '#AAAAAA' }, // Neutral
-		{ cancer: 'Prostate Adenocarcinoma', cases: 500, color: '#ADD8E6' },
-		{ cancer: 'Sarcoma', cases: 261, color: '#FFFF00' },
-		{ cancer: 'Skin Cutaneous Melanoma', cases: 470, color: '#000000' },
-		{ cancer: 'Testicular Germ Cell Cancer', cases: 150, color: '#800080' },
-		{ cancer: 'Thymoma', cases: 124, color: '#008080' },
-		{ cancer: 'Thyroid Papillary Carcinoma', cases: 507, color: '#008080' },
-		{ cancer: 'Uterine Carcinosarcoma', cases: 57, color: '#FFE5B4' },
-		{ cancer: 'Uterine Corpus Endometrioid Carcinoma', cases: 560, color: '#FFE5B4' },
-		{ cancer: 'Uveal Melanoma', cases: 80, color: '#000000' }
+		{ cancer: 'Lower Grade Glioma', cases: 516, color: '#FFA500' },
+		{ cancer: 'Lung Adenocarcinoma', cases: 585, color: '#0000FF' },
+		{ cancer: 'Lung Squamous Cell Carcinoma', cases: 504, color: '#0000FF' },
+		{ cancer: 'Mesothelioma', cases: 74, color: '#FFA500' },
+		{ cancer: 'Ovarian Serous Adenocarcinoma', cases: 608, color: '#FFA500' },
+		{ cancer: 'Pancreatic Ductal Adenocarcinoma', cases: 185, color: '#FFA500' },
+		{ cancer: 'Paraganglioma & Pheochromocytoma', cases: 179, color: '#FFA500' }, // Neutral
+		{ cancer: 'Prostate Adenocarcinoma', cases: 500, color: '#FFA500' },
+		{ cancer: 'Sarcoma', cases: 261, color: '#FFA500' },
+		{ cancer: 'Skin Cutaneous Melanoma', cases: 470, color: '#FFA500' },
+		{ cancer: 'Testicular Germ Cell Cancer', cases: 150, color: '#FFA500' },
+		{ cancer: 'Thymoma', cases: 124, color: '#FFA500' },
+		{ cancer: 'Thyroid Papillary Carcinoma', cases: 507, color: '#FFA500' },
+		{ cancer: 'Uterine Carcinosarcoma', cases: 57, color: '#FFA500' },
+		{ cancer: 'Uterine Corpus Endometrioid Carcinoma', cases: 560, color: '#FFA500' },
+		{ cancer: 'Uveal Melanoma', cases: 80, color: '#FFA500' }
 		];
 
 	let cancerTypeCounts = [
@@ -299,12 +299,12 @@
 
 <!-- PROJECT HEADER -->
 <Header bgcolor="#206095" bgfixed={true} theme="dark" center={false} short={true}>
-	<h1>Neural Networks for NSCLC Classification</h1>
+	<h1>Neural Networks for Lung Cancer Classification</h1>
 	<p class="text-big" style="margin-top: 5px">
 		A scrollytelling exploration of Non-Small Cell Lung Cancer (NSCLC) subtypes using neural networks and feature interpretability.
 	</p>
 	<p style="margin-top: 20px">
-		18 April 2025
+		12 May 2025
 	</p>
 	<p style="margin-top: 20px">
 		Josh, Rodolfo, Sasha, Tirth
@@ -314,51 +314,33 @@
 <!-- GOAL STATEMENT -->
 <Filler theme="lightblue" short={true} wide={true} center={false}>
 	<p class="text-big">
-		<strong>Goal: Use mRNA sequencing data to classify patients into LUAD or LUSC subtypes.</strong>
+		<strong>Goal: Use mRNA sequencing data to classify patients into two lung cancer subtypes.</strong>
 	</p>
 	<p class="text-big">
-		<strong>What is MRNA sequencing data?</strong><br>
+		<strong>What is mRNA sequencing data?</strong><br>
 		<br>mRNA-seq = value that quantifies gene activity<br>
 		"Think of it as pixel intensities for genes"
 	</p>
 </Filler>
 
-<!-- First story section, Why Lung Cancer
-<Section>
-	<h2>Why Lung Cancer?</h2>
-	<p>
-		Lung cancer is the leading cause of cancer-related deaths worldwide. 
-		Non-Small Cell Lung Cancer (NSCLC), which includes LUAD (adenocarcinoma) and LUSC (squamous cell carcinoma), accounts for 85% of cases.
-	</p>
-	<p>
-		Precise classification of these subtypes is essential to guide targeted treatment and improve patient outcomes. 
-		In this project, we use neural networks to distinguish between LUAD and LUSC based on genomic data.
-	</p>
-	<blockquote class="text-indent">
-		"Lung cancer is the leading cause of cancer-related deaths worldwide, accounting for the highest mortality rates among both men and women."&mdash;World Health Organization
-	</blockquote>
-</Section> -->
-
-
-<!-- Second story section, Dataset used-->
+<!-- DATASET-->
  <Section>
 	<h2>Datasets Used</h2>
 	<p>
-		We used the The Cancer Genome Atlas (TCGA) PanCancer dataset.
+		We used the The Cancer Genome Atlas (TCGA) PanCancer dataset for genomic data.
 	</p>
 </Section>
 
 <Media col='medium' caption="The infographic contains details on the TCGA project and its notable impacts on research.">
 	<img src="/img/tcga-infographic-enlarge.png" alt="TCGA Infographic" />
 </Media>
-
 <Divider/>
 
 <Section>
 	<h2>Cancer Type Distribution</h2>
 	<p>
 	  The bar chart below shows sample counts from TCGA across various cancer types. 
-	  Each bar’s color corresponds to the <strong>awareness ribbon</strong> color associated with that cancer type.
+	  We will be focusing on the bars in green, Lung Adenocarcinoma and Lung Squamous Cell Carcinoma.
 	</p>
   </Section>
 
@@ -377,41 +359,7 @@
 			title="Cancer Type Sample Counts (TCGA)"
 			height={1300}
 			barHeight={40}
-			padding={{ top: 10, bottom: 15, left: 140, right: 10 }}
-			colors={[
-				'#FFA500',  // Acute Myeloid Leukemia – Orange
-				'#FFD700',  // Adrenocortical Carcinoma – Gold
-				'#000080',  // Bladder Urothelial Carcinoma – Navy
-				'#FFC0CB',  // Breast Ductal Carcinoma – Pink
-				'#FFC0CB',  // Breast Lobular Carcinoma – Pink
-				'#008080',  // Cervical Carcinoma – Teal
-				'#4CBB17',  // Cholangiocarcinoma – Kelly Green
-				'#00008B',  // Colorectal Adenocarcinoma – Dark Blue
-				'#CCCCFF',  // Esophageal Carcinoma – Periwinkle
-				'#CCCCFF',  // Gastric Adenocarcinoma – Periwinkle
-				'#808080',  // Glioblastoma Multiforme – Gray
-				'#800020',  // Head and Neck Squamous Cell Carcinoma – Burgundy
-				'#50C878',  // Hepatocellular Carcinoma – Emerald Green
-				'#FFA500',  // Chromophobe Renal Cell Carcinoma – Orange
-				'#FFA500',  // Clear Cell Renal Cell Carcinoma – Orange
-				'#FFA500',  // Papillary Renal Cell Carcinoma – Orange
-				'#808080',  // Lower Grade Glioma – Gray
-				'#EDEDED',  // Lung Adenocarcinoma – Soft White
-				'#EDEDED',  // Lung Squamous Cell Carcinoma – Soft White
-				'#0000FF',  // Mesothelioma – Blue
-				'#008080',  // Ovarian Serous Adenocarcinoma – Teal
-				'#800080',  // Pancreatic Ductal Adenocarcinoma – Purple
-				'#AAAAAA',  // Paraganglioma & Pheochromocytoma – Neutral
-				'#ADD8E6',  // Prostate Adenocarcinoma – Light Blue
-				'#FFFF00',  // Sarcoma – Yellow
-				'#000000',  // Skin Cutaneous Melanoma – Black
-				'#800080',  // Testicular Germ Cell Cancer – Purple
-				'#008080',  // Thymoma – Teal
-				'#008080',  // Thyroid Papillary Carcinoma – Teal
-				'#FFE5B4',  // Uterine Carcinosarcoma – Peach
-				'#FFE5B4',  // Uterine Corpus Endometrioid Carcinoma – Peach
-				'#000000'   // Uveal Melanoma – Black
-			  ]}			  
+			padding={{ top: 10, bottom: 15, left: 140, right: 10 }}  
 			>
 			</BarChart>
 	</div>
@@ -424,7 +372,7 @@
 <Section>
 	<h2>Dataset Demographics</h2>
 	<p>
-		We are focusing on the Lung Adenocarcinoma and Lung Squamous Cell Carcinoma subsets.
+		We are focusing on the LUAD and LUSC subsets.
 		This section shows the distribution of cancer types, patient gender, and diagnosis age in our TCGA dataset.
 	</p>
 </Section>
@@ -479,12 +427,17 @@
 	  </div>
   </Media>
 
-<!-- <Section>
-	<h2>Goal:</h2>
+  <Section>
+	<h2>Input data</h2>
 	<p>
-		Use MRNA sequencing data (values that quantify the activity of a gene) to classify patients into LUAD or LUSC subtypes.
+		We used 1 for LUAD class label and 0 for LUSC. <br>
+		Duplicate/NA genes were dropped, and we used StandardScaler() on the raw mRNA seq values."
 	</p>
-</Section> -->
+	<Media col='wide' caption="A snapshot of the data provided to our models. Rows are patients (1018) and columns are genes (20,530)." >
+	<img src="/img/data-snapshot2.png" alt="TCGA Infographic" />
+	</Media>
+  </Section>
+
 
 <Divider />
 <!-- Classic ML Models-->
@@ -506,14 +459,32 @@
 	<img src="/img/XGBoost_Feature_Importance.png" alt="TCGA Infographic" />
 </Media>
 
+<Section>
+	<h2>ML Discussion</h2>
+	<p>
+		RFT and XGBoost are tree based classifiers that are robust to noise and control overfitting well. <br>
+		Both achieved strong accuracies with RFT reaching 95% and XGBoost 96% accuracies. <br>
+		Our ML classifiers have set a high bar!
+	</p>
+</Section>
+
 <Divider />
 
 <!-- MLP -->
 <Section>
 	<h2>MLP Model</h2>
 	<p>
-		A 4-layer MLP with batch normalization and dropout (0.53) after each hidden layer, trained using Adam optimizer to classify LUAD vs LUSC from 20,530 mRNA features.
+	MLP Model Summary:
 	</p>
+	<div style="padding-left: 20px;">
+	Input: 20,530 mRNA-seq features<br>
+	Hidden Layers: 1024 → 128 → 32 neurons<br>
+	Regularization: BatchNorm + ReLU + 53% Dropout after each hidden layer<br>
+	Optimizer: Adam (learning rate = 4e-6)<br>
+	Batch Size: 2048<br>
+	Training: Early stopping with 5-patience, max 500 epochs<br>
+	Result: 97.06% test accuracy
+	</div>
 </Section>
 
 <Section>
@@ -541,8 +512,7 @@
 	<p>
 		MLP achieved the best test accuracy (0.97) surpassing both classic ML models (XGBoost, Random Forest) and TabNet.
 		The MLP required heavy regularization through dropout and batch norm to control overfitting. 
-		MLP doesn't provide interpretability without feature attribution methods. 
-		In biological settings, it's necessary to know exactly what features led to a classification.
+		Since MLP doesn't provide interpretability without feature attribution methods we used Integrated Gradients for the gene importances. 
 	</p>
 </Section>
 
@@ -552,8 +522,12 @@
 <Section>
 	<h2>TabNet</h2>
 	<p>
-		Google model designed for tabular data, uses built-in attention mechanism. Insert quick explanation of TabNet. 
+		TabNet is a deep learning architecture designed for tabular data. 
+		It uses sequential attention to select which features to focus on at each decision step, allowing the model to learn sparse, interpretable representations.
 	</p>
+	<Media col='wide' caption="A snapshot of the the TabNet architecture." >
+		<img src="/img/tabnet-arch.png" alt="TCGA Infographic" />
+	</Media>
 </Section>
 
 <Section>
@@ -579,51 +553,58 @@
 <Section>
 	<h3>TabNet Discussion</h3>
 	<p>
-		It was surprising that TabNet, despite its built-in attention mechanism for tabular data, performed worse (0.8824 accuracy) than simpler models.
-		However, TabNet strength lies in providing interpretability out of the box through feature importances.
+		Although TabNet is specifically designed for tabular data with a built-in attention mechanism, it performed worse (88.24% accuracy) compared to simpler models.
+		However, TabNet strength lies in providing interpretability out of the box through its attention-based feature selection.
 	</p>
 
 </Section>
 <Divider />
 
 <!-- Biomarker Discovery-->
- <Section>
+<Section>
 	<h2>Biomarker Discovery</h2>
+	<Media col='wide' caption="A Venn diagram comparing top-ranked genes across models.">
+	  <img src="/img/overlaps.png" alt="Top gene overlaps between MLP, TabNet, and ML models." />
+	</Media>
 	<p>
-		IG feature from MLP. TabNet attention results. Compare with literature.
+	  We compared top-ranked genes identified by MLP (Integrated Gradients), TabNet (attention scores), and ML models (Random Forest + XGBoost pooled) to discover potential LUAD vs LUSC biomarkers.
 	</p>
- </Section>
- <Divider />
+	<p>
+	  Overlap analysis showed that only one gene, <em>TBCCD1</em>, was common between MLP and ML models. However, it is not a well-established marker specifically distinguishing LUAD from LUSC 😔.
+	</p>
+	<p>
+		A silver lining is that integrating multiple model outputs may used to reveal and confirm broader biological pathways.
+	</p>
+  </Section>
+  <Divider />
 
- <Section>
+  <Section>
 	<h2>Limitations and Future Improvements</h2>
 	<p>
-		One major limitation of our study is the reliance solely on mRNA expression data. While informative, mRNA data represents only one layer of the complex biological processes involved in cancer. Incorporating multi-omics data — such as DNA methylation, copy number variation, or proteomics — could provide a more holistic view and enhance model performance.
+		One major limitation of our study is the use of only mRNA expression data. 
+		Incorporating multi-omic data such as DNA methylation, copy number variation, and exomic mutations can provide better biological insights.
 	</p>
 	<p>
-		Additionally, TabNet’s lower accuracy (0.8824) compared to MLP and classic ML models suggests that further tuning of its hyperparameters or architectural changes might be necessary. For example, adjusting the number of decision steps, attention sparsity, or implementing a more robust learning rate schedule may improve results.
+		TabNet’s lower accuracy (0.8824) compared to MLP and classic ML models suggests that further tuning of its hyperparameters might be necessary. 
 	</p>
 	<p>
-		Another limitation lies in dataset imbalance and potential batch effects within TCGA data, which could introduce biases. Future work should explore strategies like domain adaptation, data augmentation, or sample reweighting.
+	  While the ML models (Random Forest and XGBoost) successfully recognized known LUAD vs LUSC biomarkers such as <em>KRT5</em> and <em>DSC3</em>, 
+	  the MLP and TabNet models primarily identified genes associated with general cancer biology or potential noise, 
+	  such as <em>TBCCD1</em>. 
+	  This discrepancy likely stems from the purely data-driven nature of the approach, without integrating prior biological knowledge to guide feature selection. 
+	  Incorporating domain-specific information could help focus the models on more biologically meaningful signals in future work.
 	</p>
 	<p>
-		Moreover, while MLP achieved the highest accuracy (0.9706), its lack of built-in interpretability necessitated the use of post hoc methods like Integrated Gradients. In clinical applications, interpretability is essential for biomarker validation and trust in model decisions.
-	</p>
-	<p>
-		In future iterations, we aim to:
+	  In future iterations, we aim to:
 	</p>
 	<ul>
-		<li>Integrate Graph Neural Networks (GNNs) to model gene-gene interactions more effectively.</li>
-		<li>Evaluate model robustness on external NSCLC cohorts.</li>
-		<li>Apply SHAP or attention-based visualization to unify interpretability across models.</li>
-		<li>Investigate time-series omics to capture disease progression signals.</li>
+	  <li>Use Graph Neural Networks (GNNs) to model gene-gene and gene-pathway interactions.</li>
+	  <li>Evaluate model robustness on external NSCLC cohorts.</li>
 	</ul>
 	<p>
-		Our long-term goal is to build explainable models that are not only accurate but also biologically meaningful and clinically actionable.
+	  Our long-term goal is to build explainable models that are not only accurate but also biologically meaningful and clinically actionable.
 	</p>
-</Section>
-
-
+  </Section>
 <Footer />
 
 <style>
